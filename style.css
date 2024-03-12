@@ -22,10 +22,14 @@ html,body{
     width: 100%;
     height: 150px;
     background: transparent;
-    /* position:fixed; */
+     /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#nav .fixed{
+    color: black;
 }
 
 #nav-part1{
@@ -201,7 +205,6 @@ a{
 .about_us {
     color: black;
     height: 450px;
-    margin-top: 10%;
 }
 
 .about_heading {
@@ -313,4 +316,10 @@ text-decoration: underline orange;
 color: black;
 margin-top: 2%;
 margin-bottom: 2%;
+ }
+
+ .choseusimage{
+    width: 250px;
+    height:250px;
+    align-items: center;
  }
