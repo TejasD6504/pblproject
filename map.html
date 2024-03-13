@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src ="https://js.api.here.com/v3/3.1/mapsjs-core.js"
-     type="text/javascript" charset="utf-8"></script>
-     <script src ="https://js.api.here.com/v3/3.1/mapsjs-service.js"
-     type="text/javascript" charset="utf-8"></script>
-    <title>Map</title>
+    <script src="https://apis.mappls.com/advancedmaps/api/5e2b1f8d7a0063777065f894d64a43e0/map_sdk?v=3.0&layer=vector"></script>
+    <title>Document</title>
 </head>
 <body>
-    <div style="width:640px; height:480px" id="mapContainer"></div>
-<script>
-    var platform = new H.service.Platform({
-        'apikey':''
-    });
+    <div id="map"></div>
 
-    var defaultLayers=platform.createdefaultLayers();
+    <script>
+        map = new mappls.Map('map',{center:{lat:28.612964,lng:77.229463}})
+    </script>
 
-    var map= new H.map(
-        document.getElementById('mapContainer'),
-        defaultLayers.vector.normal.map,
-        {
-            zoom:10,
-            center:{lat:52.5,lng:13.4}
-        });
-</script>
+<style> html, body, #map1{
+    margin-left:50px;
+    padding:0;
+    width:500px;
+    height: 500px;
+    align-self: center;
+    }</style>
+    
+    
 </body>
 </html>
