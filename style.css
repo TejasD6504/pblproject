@@ -221,35 +221,33 @@ a{
     color: black;
     height: 510px;
     width: 860px;
-    justify-content: space-evenly;
-    border: 2px solid orange;
-    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.para2 {
+/* .para2 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-}
+} */
 
 
 .para1 {
-    display: flex;
-    font-size: 20px;
-   
-    align-items: center;
+    font-size: 20px; 
     color: black;
     margin-top: 3%;
-    text-align: justify;
+     text-align: justify;
 }
 
-.para3 {
+/* .para3 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-}
+} */
 
 /** choose us **/
 
@@ -316,7 +314,7 @@ text-decoration: underline orange;
    border: 10px solid orange;
    font-size: 20px;
    overflow-y: scroll;
-   text-align: center;
+   text-align: justify;
 }
 
 .choseuspara1{
@@ -329,5 +327,4 @@ font-size: 25px;
  .choseusimage{
     width: 300px;
     height: 300px;
-    
  }
