@@ -219,7 +219,11 @@ a{
 .about_paragrapdh {
     background-color: white;
     color: black;
-    height: 400px;
+    height: 510px;
+    width: 860px;
+    justify-content: space-evenly;
+    border: 2px solid orange;
+    
 }
 
 .para2 {
@@ -229,13 +233,15 @@ a{
     color: black;
 }
 
+
 .para1 {
     display: flex;
     font-size: 20px;
-    justify-content: center;
+   
     align-items: center;
     color: black;
     margin-top: 3%;
+    text-align: justify;
 }
 
 .para3 {
@@ -250,7 +256,7 @@ a{
 .choose_us {
     margin-top: 15px;
     color: white;
-    height: 800px;
+    height: 750px;
 }
 
 .chosse_heading {
@@ -306,20 +312,22 @@ text-decoration: underline orange;
 
 .choseuspara{
     width: 550px;
-    height: 400px;
+    height: 450px;
    border: 10px solid orange;
-   font-size: 30px;
+   font-size: 20px;
    overflow-y: scroll;
+   text-align: center;
 }
 
 .choseuspara1{
 color: black;
 margin-top: 2%;
 margin-bottom: 2%;
+font-size: 25px;
  }
 
  .choseusimage{
-    width: 250px;
-    height:250px;
-    align-items: center;
+    width: 300px;
+    height: 300px;
+    
  }
