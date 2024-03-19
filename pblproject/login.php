@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if($email==$user['email'])
                     {
                         echo "<script>alert('Login Successfull!');</script>";;
+                        
                     }
                 }
                 else
@@ -32,13 +33,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt = $pdo->prepare($query);
                 $stmt->execute([$email,$password]);
                 echo "<script>alert('Login Successfull!');</script>";;
+                header('Location:/github/mainproject/pblproject/main.html');
                 }
             }
             else 
             {
                 $_SERVER['email'] = $email;
                 $_SERVER['password'] = $password;
-                echo "<script>alert('Incorect Password');</script>";;
+                echo"<script >alert('Incorect Password');</script>";;
+                header('Location:/github/mainproject/pblproject/pblproject/index.html');
 
             }
         }
@@ -47,6 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SERVER['email'] = $email;
             $_SERVER['password'] = $password;
             echo "<script>alert('No account associated with his email');</script>";;
+            header('Location:/github/mainproject/pblproject/pblproject/index.html');
 
         } 
     } 
@@ -56,3 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+
+
